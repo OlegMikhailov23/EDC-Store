@@ -8,7 +8,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
 
-  background: #000000 url("img/body-bg.jpg") no-repeat center top;
+  background: #000000 url("../img/background-2.jpg") repeat center top;
 }
 
 .clearfix::after {
@@ -34,9 +34,12 @@ body {
 
 .main-navigation {
   float: left;
-  width: 780px;
+  width: 100%;
 }
-
+.logo {
+  width: 120px;
+  
+}
 .main-navigation ul {
   margin: 0;
   padding: 0;
@@ -55,67 +58,38 @@ body {
 
 .main-navigation a {
   display: block;
-  padding: 25px 20px;
+  padding: 25px 65px;
   
   color: #ffffff;
   text-decoration: none;
+}
+
+.main-navigation li:nth-child(1) a {
+  padding:0;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.main-navigation li:nth-child(1) a:hover {
+  background: none;
 }
 
 .main-navigation a:hover {
   background: #242424;
 }
 
-.user-block {
-  float: right;
-  max-width: 140px;
-}
-
-.login {
-  position: relative;
-  
-  display: inline-block;
-  padding: 25px 20px;
-  padding-left: 50px;
-  
-  font-size: 16px;
-  line-height: 20px;
-  vertical-align: top;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.login:hover {
-  background-color: #242424;
-}
-
-.login::before {
-  content: "";
-  position: absolute;
-  top: 28px;
-  left: 20px;
-
-  width: 18px;
-  height: 18px;
-
-  background: transparent url("img/sprite.png") no-repeat;
-  background-position: -1px -15px;
-  opacity: 0.3;
-}
-
-.login:hover::before {
-  opacity: 1;
-}
-
 .index-logo {
-  width: 368px;
-  height: 204px;
+  width: 940px;
+  height: 231px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .index-logo img {
-  width: 368px;
-  height: 204px;
+  width: 940px;
+  height: 231px;
 }
 
 .features {
@@ -148,6 +122,7 @@ body {
 .features-item p {
   margin: 10px;
   margin-bottom: 0;
+  font-size: 18px
 }
 
 .features-name::after {
@@ -261,16 +236,22 @@ body {
 }
 
 .gallery-content {
-  height: 164px;
+  height: 250px;
   margin: 0;
 
   background-color: #cccccc;
   border: 7px solid #ffffff;
 }
 
+.gallery-content:hover {
+  cursor: pointer;
+  border: 7px solid grey;
+}
+
+ 
 .gallery-content img {
   width: 286px;
-  height: 164px;
+  height: 250px;
 }
 
 .gallery .btn {
@@ -287,6 +268,15 @@ body {
 
 .gallery-next {
   right: 0;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contact-link:hover {
+  color:blue;
 }
 
 .appointment-form input {
@@ -308,6 +298,19 @@ body {
 
 .appointment-form input:focus {
   border: 2px solid #663d15;
+}
+
+.appointment-form textarea {
+  width: 266px;
+  margin-bottom: 20px;
+  padding: 7px 15px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
 }
 
 .appointment-form input:nth-child(2n) {
@@ -370,39 +373,19 @@ body {
   vertical-align: top;
   text-decoration: none;
 
-  background: #000000 url("img/sprite.png") no-repeat center;
-  
-  transition: 
-    background-position 0.5s,
-    background-color 0.5s;
+  background: #000000 url("../img/social-sprite.png") no-repeat center;
 }
 
 .social-btn:hover {
-  background-color: #ffffff;
+  background-color: #4682B4;
 }
 
 .social-btn-vk {
-  background-position: 9px -447px;
-}
-
-.social-btn-fb {
-  background-position: 15px -171px;
+  background-position: -27px 8px;
 }
 
 .social-btn-inst {
-  background-position: 12px -313px;
-}
-
-.social-btn-vk:hover {
-  background-position: 9px -381px;
-}
-
-.social-btn-fb:hover {
-  background-position: 15px -100px;
-}
-
-.social-btn-inst:hover {
-  background-position: 12px -242px;
+  background-position: 7px 5px;
 }
 
 .footer-copyright p {
