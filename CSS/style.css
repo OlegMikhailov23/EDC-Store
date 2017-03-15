@@ -11,6 +11,8 @@ body {
   background: #000000 url("../img/background-2.jpg") repeat center top;
 }
 
+
+
 .clearfix::after {
   content: "";
 
@@ -163,7 +165,6 @@ body {
 
 .index-content-right-feedback {
   float: right;
-  padding-right: px;
   width: 350px;
 }
 
@@ -239,6 +240,7 @@ body {
 .btn:hover,
 .btn:active {
   background-color: #663d15;
+  box-shadow: 0 0 30px 2px #000000;
 }
 
 .btn.disabled,
@@ -371,7 +373,6 @@ li .link-active:hover {
 }
 
 .goods-title {
-  width: 868px;
   margin-bottom: 40px;
   
   padding-top: 5px;
@@ -449,16 +450,18 @@ li .link-active:hover {
 
 
 .goods {
-  width: 900px;
-  height: 600px;
+  width: 880px;
+  margin: 0 auto;
 }
 
 .goods-item {
-  display: inline-block;
+  float: left;
   margin-right: 20px;
   margin-bottom: 20px;
+  padding-top: 10px; 
+  
   width: 280px;
-  height: 300px;
+  min-height: 300px;
   background: #f8f5f2 url("../img/background-part.jpg");
   box-shadow: 0 0 15px 2px #000000;
 }
@@ -467,7 +470,165 @@ li .link-active:hover {
   margin-right: 0;
 }
 
+.promo-pic {
+  margin: 0 auto;
+  width: 250px;
+  height: 190px;
+  border: 7px solid #ffffff;
+}
+
+
+
+
+
+.promo-pic img{
+  display: block;
+  width: 250px;
+  height: 190px;
+}
+
+.goods-item p {
+  margin 0;
+  padding: 0;
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+}
+
+.goods-btn a:nth-child(2){
+  background: #808000;
+}
+
+.goods-btn a:nth-child(2):hover {
+  color: #000000;
+  background: #00BFFF;
+  
+}
+
+.goods-item a {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.promo-pic a {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.promo-pic:hover {
+  border: 7px solid grey;
+
+}
+
 /*Конец-Каталог*/
+
+/*Контент первого товара*/
+.goods-inner {
+  margin: 0 auto;
+  min-height: 700px;
+  padding-left:20px;
+  padding-top: 20px;
+  background: #f8f5f2 url("../img/background-part.jpg");
+  box-shadow: 0 0 15px 2px #000000;
+}
+
+.main-photo {
+  float: left;
+  width: 500px;
+  min-height: 500px;
+  border: 5px solid grey;
+}
+
+.main-photo img {
+  display: block;
+}
+
+.goods-inner-promotext p{
+  margin: 0;
+  padding: 0;
+}
+
+.goods-inner-promotext {
+  float: right;
+  width: 370px;
+  padding-top: 20px;
+  margin-right: 20px;
+  color: #000000;
+}
+
+.goods-inner-promotext .depict {
+  
+  padding-top: 30px;
+}
+
+.goods-preferences {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  list-style: none;
+}
+
+.goods-preferences li {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 5px;
+  font-style: italic;
+}
+
+.goods-preferences li::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background: #000000;
+  top: 12px;
+  left: 0;
+}
+
+.goods-inner-promotext a:last-child {
+  background: #808000;
+}
+
+.goods-inner-promotext a:last-child:hover {
+  color: #000000;
+  background: #00BFFF;
+}
+
+.btn-cost {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 33px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  vertical-align: top;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  background-color: #DCDCDC;
+  border: none;
+}
+
+.inner-btn-container {
+  font-size: 0;
+  margin-top: 25px;
+}
+
+/*Конец контента первого товара*/
 
 .main-footer {
   margin-top: 65px;
