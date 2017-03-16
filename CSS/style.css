@@ -628,7 +628,89 @@ li .link-active:hover {
   margin-top: 25px;
 }
 
-/*Конец контента первого товара*/
+/*Конец контента товара*/
+
+/*Старница заказа*/
+
+.order-form-container {
+  margin: 0 auto;
+  width: 550px;
+  
+  padding-left:20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background: #f8f5f2 url("../img/background-part.jpg");
+  box-shadow: 0 0 15px 2px #000000;
+}
+
+.order-form input {
+  width: 130px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 3px 15px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.order-form select {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 3px 15px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  
+  background-color: #f9f6f3;
+  border: 2px solid #000000
+}
+
+.order-form label {
+  color: #000000;
+  cursor: pointer;
+}
+
+.select-model {
+  display: block;
+}
+
+.order-text-area {
+  width: 510px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px 15px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  resize: none;
+}
+
+.order-form button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  
+}
+/*Конец старницы заказа*/
 
 .main-footer {
   margin-top: 65px;

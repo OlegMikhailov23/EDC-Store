@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Хранитель-1</title>
+    <title>EDC заказ</title>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
     <link rel="stylesheet" href="CSS/style.css">
@@ -18,8 +18,8 @@
             <li>
               <a href="goods.html">Товары</a>
             </li>
-            <li>
-              <a href="Order-form.html">Заказать</a>
+            <li class="active">
+              <a class="link-active">Заказать</a>
             </li>
             <li>
               <a href="#">Новости</a>
@@ -33,34 +33,33 @@
     </header>
     <main class="container">
       <section class="goods-title">
-        <h2>Подсумок для магазина «Хранитель-1»</h2>
+        <h2>Оформление заказа</h2>
         <ul class="breadcrumbs">
           <li><a href="index.html">главная</a></li>
-          <li><a href="goods.html">товары</a></li>
-          <li class="breadcrumbs-active"><a>Хранитель-1</a></li>
+          <li class="breadcrumbs-active"><a>Заказать</a></li>
         </ul>
       </section>
-      
-       <div class="goods-inner clearfix">
-         <div class="main-photo">
-           <img src="Img/podsumok.jpg" width="500" height="500" alt="Стэлс-1">
-         </div>
-         <div class="goods-inner-promotext">
-           <p>Есть в наличии<p>
-           <p class="depict">Подсумок для магазина под правую руку.</p>
-           <ul class="goods-preferences">
-             <li>По желанию подсумок может быть доукомплектован креплением «ТEK-ЛОК»;</li>
-             <li>Подсумок на поясе под прямым углом;</li>
-             <li>В процессе производства кобуры используется высококачественный материал Kydex, который не дает аллергических реакций;</li>
-             <li>Цвет: черный.</li>
-           </ul>
-           <div class="inner-btn-container">
-           <span class="btn-cost">790 Р.</span>
-           <a class="btn" href="Order-form.html">Заказать</a>
-           </div>
-         </div>
-         
-       </div>
+      <section class="order-form-container">
+        <form class="order-form" action="order.php" method="post">
+          <label>Ваше имя:
+             <input type="text" name="name" required>
+          </label>
+          <label>Ваш телефон:
+             <input type="text" name="phone" required placeholder="8983xxxxxxx">
+          </label>
+          <label class="select-model">Выбирете модель:<select name="select" required>
+            <option value="stels-1">Стэлс-1 | 1190Р.</option>
+            <option value="guardian-1">Страж-1 | 1790Р.</option>
+            <option value="keeper-1">Хранитель-1 | 790Р.</option>
+            <option value="oper-1">Опер-1 | 3490Р.</option>
+          </select></label>
+          <label>Комментариии к заказу:
+            <textarea class="order-text-area" rows="3" cols="40" type="text" name="comment-to-order" placeholder="Пишите сюда, если у Вас есть специфические пожелания по исполннию Вашего заказа"></textarea>
+          </label>
+          <button class="btn" type="submit"> Заказать!</button>
+        </form>
+      </section>
+    
     </main>
     <footer class="main-footer">
       <div class="container clearfix">
