@@ -8,14 +8,13 @@ body {
   color: #ffffff;
   text-transform: uppercase;
 
-  background: #000000 url("../img/background-2.jpg") repeat center top;
+  background: #6b5033 url("../img/background-3.jpg") repeat center top;
 }
 
 
 
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
@@ -150,6 +149,7 @@ body {
 
   background: url("../img/content-shadow.png") no-repeat center,
   #f8f5f2 url("../img/background-part.jpg");
+  box-shadow: 0 0 15px 2px #000000;
 }
 
 .index-content-left {
@@ -536,6 +536,7 @@ li .link-active:hover {
   min-height: 700px;
   padding-left:20px;
   padding-top: 20px;
+  padding-bottom: 20px;
   background: #f8f5f2 url("../img/background-part.jpg");
   box-shadow: 0 0 15px 2px #000000;
 }
@@ -634,20 +635,20 @@ li .link-active:hover {
 
 .order-form-container {
   margin: 0 auto;
-  width: 550px;
-  
-  padding-left:20px;
+  width: 470px;
+  padding-right: 25px;
+  padding-left: 65px;
   padding-top: 20px;
-  padding-right: 20px;
+  padding-right: ;
   padding-bottom: 20px;
   background: #f8f5f2 url("../img/background-part.jpg");
   box-shadow: 0 0 15px 2px #000000;
 }
 
 .order-form input {
-  width: 130px;
-  margin-left: 10px;
-  margin-right: 20px;
+  width: 252px;
+  margin-left: 70px;
+  
   margin-bottom: 20px;
   padding: 3px 15px;
 
@@ -661,10 +662,14 @@ li .link-active:hover {
   border: 2px solid #000000;
 }
 
+ .order-form .phone-field {
+  margin-left: 50px;
+}
+
 .order-form select {
   width: 200px;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 27px;
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 3px 15px;
@@ -679,6 +684,8 @@ li .link-active:hover {
 }
 
 .order-form label {
+  display: block;
+  width: 100%;
   color: #000000;
   cursor: pointer;
 }
@@ -688,10 +695,10 @@ li .link-active:hover {
 }
 
 .order-text-area {
-  width: 510px;
-  margin-left: auto;
+  width: 365px;
   margin-right: auto;
-  padding: 3px 15px;
+  padding-left:25px;
+  padding-right: 25px;
 
   font-size: 14px;
   line-height: 24px;
@@ -711,6 +718,67 @@ li .link-active:hover {
   
 }
 /*Конец старницы заказа*/
+
+/*Начало новостей*/
+.news-container {
+  margin: 0 auto;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #f8f5f2 url("../img/background-part.jpg");
+  box-shadow: 0 0 15px 2px #000000;
+}
+
+.news-item {
+  padding-top: 10px;
+  border-bottom: 1px dashed #696969;
+  color: #000000;
+  
+}
+
+.news-pic {
+  float: left;
+}
+
+.news-content {
+  width: 680px;
+  float: left;
+  margin-left: 20px;
+  color: #000000;
+}
+
+.news-item h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.news-item p{
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: italic;
+  color: #000000;
+}
+
+.news-content a {
+  text-decoration: none;
+}
+
+.news-content time {
+  float: right;
+  color: #696969;
+}
+
+
+/*Конец новостей*/
 
 .main-footer {
   margin-top: 65px;
