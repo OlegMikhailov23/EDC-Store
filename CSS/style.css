@@ -777,8 +777,62 @@ li .link-active:hover {
   color: #696969;
 }
 
-
 /*Конец новостей*/
+
+/*Начало о нас*/
+.about-container {
+  margin: 0 auto;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #f8f5f2 url("../img/background-part.jpg");
+  box-shadow: 0 0 15px 2px #000000;
+  color: #000000;
+}
+
+.about-container h2 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.about-container a {
+  text-decoration: none;
+}
+
+.directors-feedback {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #696969;
+  border-bottom: 1px solid #696969;
+}
+
+.directors-pic {
+  float: left;
+  width: 150px;
+  height: 100px;
+  box-shadow: 0 0 15px 2px #000000;
+}
+
+.directors-qoute {
+  width: 700px;
+  float: left;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+.directors-qoute span {
+  margin-top: 25px;
+  float: right;
+  color: #696969;
+}
+
+/*Конец о нас*/
+
 
 .main-footer {
   margin-top: 65px;
