@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+
+
  
 <?php
    $back = "<p><a href=\"javascript: history.back()\">Вернуться назад</a></p>";
