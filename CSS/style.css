@@ -782,6 +782,36 @@ li .link-active:hover {
 
 
 /*Конец о нас*/
+/*Страницы обратной связи и заказа*/
+
+.form-echo-container {
+    margin: 0 auto;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    width: 470px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f8f5f2 url("../img/background-part.jpg");
+    box-shadow: 0 0 15px 2px #000000;
+}
+
+.form-echo-container h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: #000000;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.form-echo-container a {
+  margin-top: 20px;
+  margin-left: 140px;
+}
+
+/*Формы обратной связи и заказа*/
+
 
 .main-footer {
     margin-top: 65px;

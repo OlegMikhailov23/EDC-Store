@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-   <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>EDC обратная связь</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/mini-style.css">
 </head>
+
 <body>
-
-
- 
-<?php
-   $back = "<p><a href=\"javascript: history.back()\">Вернуться назад</a></p>";
+    <header class="main-header">
+        <div class="container clearfix">
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html"><img src="img/logo.png" width="120" height="30" alt="E.D.C. STORE"></a>
+                    </li>
+                    <li>
+                        <a href="goods.html">Товары</a>
+                    </li>
+                    <li>
+                        <a href="Order-form.html">Заказать</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Новости</a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">О нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="form-echo-container">
+            <h2>☺Ваш запрос отправлен☺</h2>
+            <h2>Мы с Вами свяжемся в ближайшее время!</h2>
+            <a href="goods.html" class="btn">Назад к покупкам!</a>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <section class="footer-contacts"><span class="footer-signature">
+          #E.D.C. Store</span>
+                <br>
+                <br> Телефон: +7 (911) 731-84-25
+            </section>
+            <section class="footer-social">
+                <p>Давайте дружить!</p>
+                <a class="social-btn social-btn-vk" href="https://vk.com/e_d_c_store" target="_blank">Вконтакте</a>
+                <a class="social-btn social-btn-inst" href="https://www.instagram.com/edc_store_kydex_holster/" target="_blank">Инстаграм</a>
+            </section>
+            <section class="footer-copyright">
+                <p>Разработано:</p>
+                <a class="btn" href="https://vk.com/huzky_dj" target="_blank">Oleg Mikhailov</a>
+            </section>
+        </div>
+    </footer>
+    <?php
+   
  
    if(!empty($_POST['name']) and !empty($_POST['phone']) and 
    !empty($_POST['message'])){
@@ -23,8 +70,7 @@
       'Вам написал: '.$name.'<br />Его номер: '.$phone.'<br />
       Его сообщение: '.$message,"charset=utf-8");
  
-      echo "Ваше сообщение успешно отправлено!<Br> Вы получите ответ в 
-      ближайшее время<Br> $back";
+      
  
       exit;
    } 
@@ -34,4 +80,5 @@
    }
 ?>
 </body>
+
 </html>
