@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>EDC заказ</title>
-    <meta name="keywords" content="кобура, кайдекс, травматика, оружие, скрытая кобура, поясная кобура, kydex">
+    <title>Хантер-2</title>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
     <link rel="stylesheet" href="CSS/normalize.css">
@@ -22,8 +21,8 @@
                     <li>
                         <a href="goods.html">Товары</a>
                     </li>
-                    <li class="active">
-                        <a class="link-active">Заказать</a>
+                    <li>
+                        <a href="Order-form.html">Заказать</a>
                     </li>
                     <li>
                         <a href="news.html">Новости</a>
@@ -37,36 +36,32 @@
     </header>
     <main class="container">
         <section class="goods-title">
-            <h2>Оформление заказа</h2>
+            <h2>Ножны «Хантер-2»</h2>
             <ul class="breadcrumbs">
                 <li><a href="index.html">главная</a></li>
-                <li class="breadcrumbs-active"><a>Заказать</a></li>
+                <li><a href="goods.html">товары</a></li>
+                <li class="breadcrumbs-active"><a>Хантер-2</a></li>
             </ul>
         </section>
-        <section class="order-form-container">
-            <form class="order-form" action="order.php" method="post">
-                <label>Ваше имя:
-                    <input type="text" name="name" placeholder="Иван" required>
-                </label>
-                <label>Ваш телефон:
-                    <input class="phone-field" type="text" name="phone" required placeholder="8983xxxxxxx">
-                </label>
-                <label class="select-model">Выбирете модель:
-                    <select name="select">
-                        <option value="stels-1">Стэлс-1 | 1190Р.</option>
-                        <option value="guardian-1">Страж-1 | 1790Р.</option>
-                        <option value="keeper-1">Хранитель-1 | 790Р.</option>
-                        <option value="oper-1">Опер-1 | 3490Р.</option>
-                        <option value="hunter-1">Хантер-1 | 1000Р.</option>
-                        <option value="hunter-2">Хантер-2 | 800Р.</option>
-                    </select>
-                </label>
-                <label>Комментариии к заказу:
-                    <textarea class="order-text-area" rows="3" cols="40"  name="comment" placeholder="Пишите сюда, если у Вас есть специфические пожелания по исполннию Вашего заказа"></textarea>
-                </label>
-                <button class="btn" type="submit"> Заказать!</button>
-            </form>
-        </section>
+        <div class="goods-inner clearfix">
+            <div class="main-photo">
+                <img src="img/promo-viktorinox-knife.jpg" width="500" height="500" alt="Стэлс-1">
+            </div>
+            <div class="goods-inner-promotext">
+                <p>Есть в наличии
+                    <p>
+                        <p class="depict">Ножны «Хантер-2»</p>
+                        <ul class="goods-preferences">
+                            <li>По желанию ножны могут быть оборудованы креплением «ТEK-ЛОК»;</li>
+                            
+                            <li>В процессе производства ножен используется высококачественный материал Kydex, который не дает аллергических реакций;</li>
+                        </ul>
+                        <div class="inner-btn-container">
+                            <span class="btn-cost">800 Р.</span>
+                            <a class="btn" href="Order-form.html">Заказать</a>
+                        </div>
+            </div>
+        </div>
     </main>
     <footer class="main-footer">
         <div class="container clearfix">
