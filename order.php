@@ -14,7 +14,7 @@
             <nav class="main-navigation">
                 <ul>
                     <li>
-                        <a href="index.html"><img src="img/logo.png" width="120" height="30" alt="E.D.C. STORE"></a>
+                        <a href="index.html"><img src="img/logo-site.png" width="190" height="30" alt="EDC STORE"></a>
                     </li>
                     <li>
                         <a href="goods.html">Товары</a>
