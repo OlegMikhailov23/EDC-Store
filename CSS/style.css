@@ -28,17 +28,36 @@ body {
     background-color: #000000;
 }
 
-.main-header::after {
+.header-logo {
+    position: relative;
+}
+
+
+.header-logo::before {
+    content: "Производсво кобур и ножен";
+    position: absolute;
+    width: 195px;
+    height: 40px;
+    top: 52px;
+    left: 50px;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: inherit;
+}
+
+
+.header-logo::after {
     content: "+7 (911) 731-84-25";
     position: absolute;
     width: 170px;
     height: 40px;
-    left: 250px;
-    top: 80px;
+    left: 0px;
+    top: 90px;
     font-size: 22px;
     line-height: 24px;
     font-family: inherit;
     font-weight: 700;
+    z-index: 20;
 }
 
 .main-navigation {

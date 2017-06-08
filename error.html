@@ -13,7 +13,7 @@
         <div class="container clearfix">
             <nav class="main-navigation">
                 <ul>
-                    <li>
+                    <li class="header-logo">
                         <a href="index.html"><img src="img/logo-site.png" width="190" height="30" alt="EDC STORE"></a>
                     </li>
                     <li>
